@@ -1,0 +1,104 @@
+body{
+    margin: 0;
+    font-size: 16px;
+    background: hsl(205, 43%, 93%)
+}
+
+.container{
+    width: 640px;
+    margin: auto;
+    margin-top: 100px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 220px 270px;
+}
+
+.container div{
+    padding: 30px;
+}
+
+.join{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.join h1{
+    color: #2AB2AF;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.join h2{
+    color: #C0DF34;
+}
+
+.join p{
+    color: #D0DDE6;
+}
+
+.subscription{
+    background-color: #2AB2AF;
+    color: #fff;
+}
+
+.subscription p{
+    margin-top: 5px;
+}
+.price{
+    font-size: 30px;
+}
+.rate{
+    color: #79dbd7;
+    position: absolute;
+    margin: 8px 12px;
+}
+
+.about{
+    color:#fff;
+    background-color: #48BFBD;
+}
+
+.btn{
+    background-color: hsl(71, 73%, 54%);
+    color:#fff;
+    width: 250px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px 0 #27a5a3;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.about h2{
+    font-size: 18px;
+}
+.about ul{
+    list-style: none;
+    padding-left: 0;
+    color: #f5fef7;
+    font-size: 14px;
+    line-height: 1.5;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: auto;
+}
+
+@media only screen and (max-width:600px){
+    .container{
+        max-width: 320px;
+        margin: auto;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    footer{
+        display:none;
+    }
+}
